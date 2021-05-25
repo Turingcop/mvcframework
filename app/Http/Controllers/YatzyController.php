@@ -26,4 +26,10 @@ class YatzyController extends Controller
         session(['game' => '']);
         return redirect("/yatzy");
     }
+
+    public function chane()
+    {
+        session(['game' => '']);
+        return redirect("/yatzy");
+    }
 }
