@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@400;500;700;900&display=swap);
+h1 {
+  font: 700 2.8rem "Noto Sans JP";
+  color: #0277BD;
+  margin: 0;
+  margin-bottom: 2.8rem;
+}
+
+nav {
+  background-color: #039BE5;
+  color: #E0F2F1;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  font: 500 1.4rem "Noto Sans JP";
+  padding: 1rem;
+  color: #E0F2F1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #0277BD;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  padding: 2.8rem;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  bottom: 0;
+  font: 500 1.4rem "Noto Sans JP";
+  background: #039BE5;
+  color: #E0F2F1;
+}
+
+.game21,
+.yatzy {
+  min-height: 60vh;
+}
+
+.game21 input[type=submit] {
+  min-width: 120px;
+  padding: 0.5rem;
+}
+
+.yatzy input[type=submit] {
+  min-width: 120px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  /* margin-left: 1rem; */
+}
+
+.playbtn form {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.dicecheck {
+  margin-bottom: 2.8rem;
+}
+.dicecheck label {
+  font-size: 80px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1rem;
+}
+.dicecheck .space {
+  height: 2.8rem;
+}
+
+input[type=checkbox]:checked + label {
+  border-bottom: 2px dashed teal;
+  color: teal;
+}
+
+.dicecheck input[type=checkbox] {
+  display: none;
+}
+
+td {
+  padding-top: 0.5rem;
+  border-bottom: 1px dashed gray;
+}
+
+td:nth-child(1) {
+  width: 70%;
+}
+
+td:nth-child(2) {
+  width: 30%;
+  text-align: right;
+}
+
+table {
+  width: 50%;
+}
+
+table th {
+  text-align: left;
+}
+
