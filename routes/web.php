@@ -21,7 +21,7 @@ Route::get('/', function () {
 Route::get('/test', [DiceController::class, 'show']);
 Route::post('/test', [DiceController::class, 'show']);
 
-Route::prefix('yatzy')->group(function() {
+Route::prefix('yatzy')->group(function () {
     Route::get('', [YatzyController::class, 'start']);
     Route::post('', [YatzyController::class, 'play']);
     Route::post('/restart', [YatzyController::class, 'reset']);

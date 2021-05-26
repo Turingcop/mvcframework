@@ -59,7 +59,7 @@ prepare:
 	rm -rf build/*
 
 phploc: prepare
-	[ ! -d src ] || $(PHPLOC) src | tee build/phploc
+	[ ! -d src ] || $(PHPLOC) app | tee build/phploc
 
 phpcs: prepare
 	[ ! -f .phpcs.xml ] || $(PHPCS) --standard=.phpcs.xml | tee build/phpcs
@@ -68,14 +68,14 @@ phpcbf:
 ifneq ($(wildcard test),)
 	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml
 else
-	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml
+	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml app tests
 endif
 
 phpcpd: prepare
-	$(PHPCPD) src | tee build/phpcpd
+	$(PHPCPD) app | tee build/phpcpd
 
 phpmd: prepare
-	- [ ! -f .phpmd.xml ] || [ ! -d src ] || $(PHPMD) . text .phpmd.xml | tee build/phpmd
+	- [ ! -f .phpmd.xml ] || [ ! -d app ] || $(PHPMD) . text .phpmd.xml | tee build/phpmd
 
 phpstan: prepare
 	- [ ! -f .phpstan.neon ] || $(PHPSTAN) analyse -c .phpstan.neon | tee build/phpstan

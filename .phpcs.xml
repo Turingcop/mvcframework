@@ -16,6 +16,8 @@
     <exclude-pattern>*/seeds/*</exclude-pattern>
     <exclude-pattern>*.blade.php</exclude-pattern>
     <exclude-pattern>*.js</exclude-pattern>
+    <exclude-pattern>storage</exclude-pattern>
+    <exclude-pattern>node_modules</exclude-pattern>
 
     <arg name="encoding" value="utf-8"/>
     <arg name="warning-severity" value="0"/>
