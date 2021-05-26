@@ -39,7 +39,7 @@ class Yatzy
         $data = [
             "header" => "Yatzy",
             "title" => "Yatzy",
-            "action" => "/yatzy",
+            "action" => url("/yatzy"),
             "playlabel" => "Börja",
            ];
 
@@ -51,7 +51,6 @@ class Yatzy
         }
 
         $data["score"] = $this->scoreboard;
-        // $body = renderView("layout/yatzy.php", $data);
         return $data;
     }
 
@@ -60,7 +59,7 @@ class Yatzy
         $data = [
             "header" => "Yatzy",
             "title" => "Yatzy",
-            "action" => "/yatzy",
+            "action" => url("/yatzy"),
             "playlabel" => "Kasta",
            ];
 
@@ -96,7 +95,6 @@ class Yatzy
         $this->calcScore();
         $data["checkbox"] = implode(" ", $this->playerhand->checkDice($this->disable));
         $data["score"] = $this->scoreboard;
-        // $body = renderView("layout/yatzy.php", $data);
         return $data;
     }
 

@@ -1,6 +1,6 @@
 </main>
 <footer>
-    <p>This is the footer.</p>
+    <p>Simon Evertsson 2021</p>
 </footer>
 </body>
 </html>

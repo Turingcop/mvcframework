@@ -13,8 +13,4 @@ class DiceController extends BaseController
 
        return view('test', ['res' => $dice->getLastRoll()]);
    }
-
-   public function show1() {
-       return view('test', ['res' => "Hello"]);
-   }
 }

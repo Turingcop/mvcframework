@@ -20,12 +20,12 @@ class Session extends ControllerBase
     public function index(): ResponseInterface
     {
         $body = renderView("layout/session.php");
-        return $this->response($body);
+        return view('session');
     }
 
     public function destroy(): ResponseInterface
     {
-        destroySession();
-        return $this->redirect(url("/session"));
+        $request->session()->flush();
+        return $redirect(url("/session"));
     }
 }

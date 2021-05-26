@@ -12,7 +12,6 @@
         <nav>
             <a href="<?= url("/") ?>">Home</a>
             <a href="<?= url("/session") ?>">Session</a>
-            <a href="<?= url("/debug") ?>">Debug</a>
             <a href="<?= url("/test") ?>">Test</a>
             <a href="<?= url("/yatzy") ?>">Yatzy</a>
         </nav>

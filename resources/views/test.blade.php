@@ -1,11 +1,11 @@
 @include('header')
 
 
-{{ $res }}
+<p>{{ $res }}</p>
 
-<form method="post" action="/test">
+<form method="post" action={{url("/test")}}>
 @csrf
 
-<input type="submit"></form>
+<input type="submit" value="Kasta"></form>
 
 @include('footer')
