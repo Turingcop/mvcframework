@@ -9,8 +9,6 @@ class DiceGraphic extends Dice
 {
     use HasFactory;
 
-//     class DiceGraphic extends Dice
-// {
     protected const FACES = 6;
     protected array $graphic = [
         1 => "⚀",
@@ -30,5 +28,4 @@ class DiceGraphic extends Dice
     {
         return $this->graphic[$this->getLastRoll()];
     }
-// }
 }

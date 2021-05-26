@@ -4,12 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Traits\YatzyCheat;
 
 class Yatzy
 {
     use HasFactory;
 
-    // use YatzyCheat;
+    use YatzyCheat;
 
     private $playerhand;
     private $presentationHand;
@@ -39,7 +40,7 @@ class Yatzy
         $data = [
             "header" => "Yatzy",
             "title" => "Yatzy",
-            "action" => url("/yatzy"),
+            "action" => "/yatzy",
             "playlabel" => "Börja",
            ];
 
@@ -59,7 +60,7 @@ class Yatzy
         $data = [
             "header" => "Yatzy",
             "title" => "Yatzy",
-            "action" => url("/yatzy"),
+            "action" => "/yatzy",
             "playlabel" => "Kasta",
            ];
 
@@ -89,7 +90,7 @@ class Yatzy
         if ($this->round > 6) {
             $this->disable = "disabled";
             $data["playlabel"] = "Börja om";
-            $data["action"] = url("/yatzy/restart");
+            $data["action"] = "/yatzy/restart";
         }
 
         $this->calcScore();

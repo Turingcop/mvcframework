@@ -12,12 +12,14 @@ class YatzyController extends Controller
         $game = new Yatzy("App\Models\YatzyHand", "App\Models\DiceGraphic", 5);
         session(['game' => $game]);
         $data = $game->presentGame();
+        $data['action'] = url($data['action']);
         return view('yatzy', $data);
     }
 
     public function play()
     {
         $data = session('game')->playGame();
+        $data['action'] = url($data['action']);
         return view('yatzy', $data);
     }
 

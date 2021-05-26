@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace siev20\yatzy;
+namespace App\Traits;
 
 trait YatzyCheat
 {

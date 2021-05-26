@@ -11,7 +11,7 @@ PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/app/Http/Controllers/DiceController.php
 --------------------------------------------------------------------------------------------
-FOUND 13 ERRORS AFFECTING 11 LINES
+FOUND 9 ERRORS AFFECTING 8 LINES
 --------------------------------------------------------------------------------------------
   3 | ERROR | [x] Header blocks must be separated by a single blank line
   5 | ERROR | [x] Header blocks must be separated by a single blank line
@@ -21,13 +21,9 @@ FOUND 13 ERRORS AFFECTING 11 LINES
  12 | ERROR | [x] Line indented incorrectly; expected at least 8 spaces, found 7
  14 | ERROR | [x] Line indented incorrectly; expected at least 8 spaces, found 7
  15 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 3
- 17 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 3
- 17 | ERROR | [x] Opening brace should be on a new line
- 18 | ERROR | [x] Line indented incorrectly; expected at least 8 spaces, found 7
- 19 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 3
- 20 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 16 | ERROR | [x] Expected 1 newline at end of file; 0 found
 --------------------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 13 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 --------------------------------------------------------------------------------------------
 
 
@@ -50,6 +46,16 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 ---------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ---------------------------------------------------------------------------
+
+
+FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/app/Traits/YatzyCheat.php
+------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------------
+ 22 | ERROR | [x] Expected 1 newline at end of file; 0 found
+------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------
 
 
 FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/routes/web.php
@@ -98,10 +104,10 @@ FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/storage/framework/views/20b
 -------------------------------------------------------------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 1 LINE
 -------------------------------------------------------------------------------------------------------------------------
- 20 | ERROR | [ ] The file header must be the first content in the file
- 20 | ERROR | [x] Header blocks must be separated by a single blank line
- 20 | ERROR | [x] Header blocks must be separated by a single blank line
- 20 | ERROR | [x] Expected 1 newline at end of file; 0 found
+ 19 | ERROR | [ ] The file header must be the first content in the file
+ 19 | ERROR | [x] Header blocks must be separated by a single blank line
+ 19 | ERROR | [x] Header blocks must be separated by a single blank line
+ 19 | ERROR | [x] Expected 1 newline at end of file; 0 found
 -------------------------------------------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 -------------------------------------------------------------------------------------------------------------------------
@@ -122,9 +128,26 @@ PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/storage/framework/views/99ce4a719a7c6d530865675afadbaadb1a6110a1.php
 -------------------------------------------------------------------------------------------------------------------------
-FOUND 1 ERROR AFFECTING 1 LINE
+FOUND 3 ERRORS AFFECTING 1 LINE
 -------------------------------------------------------------------------------------------------------------------------
- 3 | ERROR | The file header must be the first content in the file
+ 70 | ERROR | [ ] The file header must be the first content in the file
+ 70 | ERROR | [x] Header blocks must be separated by a single blank line
+ 70 | ERROR | [x] Header blocks must be separated by a single blank line
+-------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-------------------------------------------------------------------------------------------------------------------------
+
+
+FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/storage/framework/views/991f802c383bf1cc7efa214f0972ba755905b44c.php
+-------------------------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 1 LINE
+-------------------------------------------------------------------------------------------------------------------------
+ 18 | ERROR | [ ] The file header must be the first content in the file
+ 18 | ERROR | [x] Header blocks must be separated by a single blank line
+ 18 | ERROR | [x] Header blocks must be separated by a single blank line
+ 18 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
+-------------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 -------------------------------------------------------------------------------------------------------------------------
 
 
@@ -184,9 +207,9 @@ FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/storage/framework/views/90e
 -------------------------------------------------------------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 1 LINE
 -------------------------------------------------------------------------------------------------------------------------
- 12 | ERROR | [ ] The file header must be the first content in the file
- 12 | ERROR | [x] Header blocks must be separated by a single blank line
- 12 | ERROR | [x] Header blocks must be separated by a single blank line
+ 11 | ERROR | [ ] The file header must be the first content in the file
+ 11 | ERROR | [x] Header blocks must be separated by a single blank line
+ 11 | ERROR | [x] Header blocks must be separated by a single blank line
 -------------------------------------------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 -------------------------------------------------------------------------------------------------------------------------
@@ -221,12 +244,52 @@ FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------------------
 
 
+FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/tests/Unit/DiceTest.php
+----------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------------
+ 32 | ERROR | [x] Expected 1 newline at end of file; 0 found
+----------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------
+
+
+FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/tests/Unit/YatzyTest.php
+-----------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------
+ 52 | ERROR | [x] Expected 1 newline at end of file; 0 found
+-----------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------
+
+
 FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/tests/Unit/ExampleTest.php
 ----------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
 ----------------------------------------------------------------------------------
  14 | ERROR | Method name "ExampleTest::test_example" is not in camel caps format
 ----------------------------------------------------------------------------------
+
+
+FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/tests/Unit/YatzyControllerTest.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 36 | ERROR | [x] Expected 1 newline at end of file; 0 found
+---------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------------
+
+
+FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/tests/Unit/YatzyHandTest.php
+---------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------
+ 66 | ERROR | [x] Expected 1 newline at end of file; 0 found
+---------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+---------------------------------------------------------------------------------
 
 
 FILE: /home/turingcop/dbwebb-kurser/mvc/me/framework/config/session.php
@@ -261,5 +324,5 @@ FOUND 2 ERRORS AFFECTING 1 LINE
 PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ---------------------------------------------------------------------------
 
-Time: 3.32 secs; Memory: 8MB
+Time: 3.18 secs; Memory: 8MB
 
