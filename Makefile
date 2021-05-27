@@ -59,7 +59,7 @@ prepare:
 	rm -rf build/*
 
 phploc: prepare
-	[ ! -d src ] || $(PHPLOC) app | tee build/phploc
+	[ ! -d app ] || $(PHPLOC) app | tee build/phploc
 
 phpcs: prepare
 	[ ! -f .phpcs.xml ] || $(PHPCS) --standard=.phpcs.xml | tee build/phpcs
