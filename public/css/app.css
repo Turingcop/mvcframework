@@ -113,7 +113,8 @@ input[type=checkbox]:checked + label {
   color: #0277BD;
 }
 
-.dicecheck input[type=checkbox] {
+.dicecheck input[type=checkbox],
+.pickscore input[type=checkbox] {
   display: none;
 }
 
