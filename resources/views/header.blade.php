@@ -14,6 +14,8 @@
             <a href={{ url("/session") }} class={{ request()->path() == "session" ? 'active' : '' }}>Session</a>
             <a href={{ url("/test") }} class={{ request()->path() == "test" ? 'active' : '' }}>Test</a>
             <a href={{ url("/yatzy") }} class={{ request()->path() == "yatzy" ? 'active' : '' }}>Yatzy</a>
+            <a href={{ url("/books") }} class={{ request()->path() == "books" ? 'active' : '' }}>Books</a>
+            <a href={{ url("/score") }} class={{ request()->path() == "score" ? 'active' : '' }}>Highscore</a>
         </nav>
     </header>
 <main>

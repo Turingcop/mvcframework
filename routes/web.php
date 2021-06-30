@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{DiceController, YatzyController, SessionController};
+use App\Http\Controllers\{DiceController, YatzyController, SessionController, ScoreController};
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +26,9 @@ Route::prefix('yatzy')->group(function () {
     Route::post('', [YatzyController::class, 'play']);
     Route::post('/restart', [YatzyController::class, 'reset']);
 });
+
+Route::view('/books', 'books');
+Route::get('/score', [ScoreController::class, 'show']);
 
 Route::get('/session', [SessionController::class, 'index']);
 Route::get('/session/destroy', [SessionController::class, 'destroy']);

@@ -11,6 +11,10 @@ $title: 700 2.8rem 'Noto Sans JP';
     box-sizing: border-box;
 }
 
+body {
+    overflow-y: scroll;
+}
+
 h1 {
     font: $title;
     color: $deeplagoon;
@@ -57,6 +61,8 @@ body {
 main {
     padding: 2.8rem;
     height: 85vh;
+    height: fit-content;
+    margin-bottom: 2.8rem;
 }
 
 .center {
@@ -95,6 +101,7 @@ footer {
 
 .yatzy input[type="submit"] {
     min-width: 120px;
+    height: 2.8rem;
     padding: 0.5rem;
     margin-bottom: 1rem;
     /* margin-left: 1rem; */
@@ -151,4 +158,35 @@ table {
 table th {
     text-align: left;
 }
+
+.books td {
+    text-align: left;
+    width: 25%;
+    border: none;
+    padding-top: 1rem;
+}
+
+.books th {
+    padding-bottom: 1.4rem;
+}
+
+.books td img {
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+.imgcell {
+    padding-bottom: 1.4rem;
+}
+
+.books tr td:first-of-type::first-letter {
+    color: $deeplagoon;
+    font-weight: 900;
+}
+
+input[type=text] {
+    height: 2.8rem;
+    margin-bottom: 2.8rem;
+}
+
 

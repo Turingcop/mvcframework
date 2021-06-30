@@ -20,9 +20,8 @@ $score = $score ?? null;
 
     {!! $present !!}
     {!! $checkbox !!}
-
     <div class="space"></div>
-    <input type="submit" value='{{ $playlabel }}''>
+    <input type="submit" value='{{ $playlabel }}'>
 </form>
 </div>
 
