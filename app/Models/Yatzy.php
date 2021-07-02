@@ -19,6 +19,7 @@ class Yatzy
     private int $round = 1;
     private int $rolls = 0;
     private ?string $disable = null;
+    public ?string $playername = null;
 
     public function __construct($dicehand, $dice, $amount)
     {
@@ -38,15 +39,13 @@ class Yatzy
     public function presentGame()
     {
         $score = new Score;
-        error_log("SCORE");
-        error_log($score->all()->sortByDesc('score')->offsetExists(9) ? 9 : 0);
-        error_log("SCORE END");
         $this->presentationHand = new YatzyHand("App\Models\DiceCheat", 5);
         $data = [
             "header" => "Yatzy",
             "title" => "Yatzy",
             "action" => "/yatzy",
             "playlabel" => "Börja",
+            "name" => 'playername'
            ];
 
         $this->presentationHand->roll();
@@ -60,14 +59,31 @@ class Yatzy
         return $data;
     }
 
+    private function setName()
+    {
+        $data['playername'] = $_POST['playername'] ?? $this->playername;
+        $this->playername = $_POST['playername'] ?? $this->playername;
+        $data["disabled"] = 'disabled';
+        return $data;
+    }
+
+    private function resetName()
+    {
+        $data["disabled"] = '';
+        $data["playername"] = '';
+        return $data;
+    }
+
     private function highScore()
     {
-        $score = new Score;
-        $tenth = $score->all()->offsetExists(9) ? $score->all()->sortByDesc('score')->last()->score : 0;
+        $tenth = Score::all()->offsetExists(9) ? $score->all()->sortByDesc('score')->last()->score : 0;
         if ($this->scoreboard["summa"] > $tenth) {
-            $score->score = $this->scoreboard["summa"];
-            $score->all()->sortByDesc('score')->last()->delete();
-            $score->save();
+            $data['flash'] = "Grattis, din poäng placerar dig bland de tio bästa!";
+            Score::create([
+                'score' => $this->scoreboard["summa"],
+                'name' => $this->playername,
+            ]);
+            return $data;
         }
     }
 
@@ -78,8 +94,9 @@ class Yatzy
             "title" => "Yatzy",
             "action" => "/yatzy",
             "playlabel" => "Kasta",
+            "round" => $this->round,
            ];
-
+        $data = array_merge($data, $this->setName());
         $this->playerhand->resetSave();
         $this->disable = null;
 
@@ -110,7 +127,7 @@ class Yatzy
             $data["playlabel"] = "Börja om";
             $data["action"] = "/yatzy/restart";
 
-            $this->highScore();
+            $data = array_merge($data, $this->highScore());
         }
 
         $data["checkbox"] = implode(" ", $this->playerhand->checkDice($this->disable));

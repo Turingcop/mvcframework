@@ -10,4 +10,6 @@ class Score extends Model
     use HasFactory;
 
     protected $table = 'score';
+
+    protected $fillable = ['score', 'name'];
 }

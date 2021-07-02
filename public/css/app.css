@@ -104,9 +104,6 @@ footer {
   margin-right: 1rem;
 }
 
-.dicecheck {
-  margin-bottom: 2.8rem;
-}
 .dicecheck label {
   font-size: 80px;
   margin-right: 1rem;
@@ -177,5 +174,14 @@ table th {
 input[type=text] {
   height: 2.8rem;
   margin-bottom: 2.8rem;
+}
+
+.scoretable td, .scoretable th {
+  width: calc(100%/3);
+  text-align: left;
+}
+
+p {
+  min-height: 1rem;
 }
 

@@ -6,13 +6,17 @@ $message = $message ?? null;
 $checkbox = $checkbox ?? null;
 $action = $action ?? null;
 $playlabel = $playlabel ?? null;
+$name = $name ?? null;
 $present = $present ?? null;
 $score = $score ?? null;
+$round = $round ?? null;
+$disabled = $disabled ?? null;
+$playername = $playername ?? null;
 
 @endphp
 
 <div class="yatzy">
-<h1>Yatzy</h1>
+<h1>Yatzy {{ $round ? ": Runda " . $round : "" }}</h1>
 <div>
 
 <form method="POST" action={{ $action }} class="dicecheck">
@@ -21,7 +25,10 @@ $score = $score ?? null;
     {!! $present !!}
     {!! $checkbox !!}
     <div class="space"></div>
+    <input type="text" name="playername" placeholder="Ange namn" required {{ $disabled }} value='{{ $playername }}'>
+    <br>
     <input type="submit" value='{{ $playlabel }}'>
+    <p>{{ $flash ?? null }}</p>
 </form>
 </div>
 

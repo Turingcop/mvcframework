@@ -14,9 +14,6 @@ use App\Models\Books;
             <th>
                 Author
             </th>
-            {{-- <th>
-                Image
-            </th> --}}
         </tr>
         @foreach (Books::all() as $book) 
         

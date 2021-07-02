@@ -124,7 +124,7 @@ footer {
         // margin-bottom: 2.8rem;
     }
 
-    margin-bottom: 2.8rem;
+    // margin-bottom: 2.8rem;
 }
 
 input[type="checkbox"]:checked + label {
@@ -189,4 +189,14 @@ input[type=text] {
     margin-bottom: 2.8rem;
 }
 
+.scoretable {
+    td, th {
+        width: calc(100%/3);
+        text-align: left;
+    }
+}
+
+p {
+    min-height: 1rem;
+}
 
