@@ -25,7 +25,7 @@ $playername = $playername ?? null;
     {!! $present !!}
     {!! $checkbox !!}
     <div class="space"></div>
-    <input type="text" name="playername" placeholder="Ange namn" required {{ $disabled }} value='{{ $playername }}'>
+    <input type="text" name="playername" placeholder="Ange namn" maxlength=10 required {{ $disabled }} value='{{ $playername }}'>
     <br>
     <input type="submit" value='{{ $playlabel }}'>
     <p>{{ $flash ?? null }}</p>

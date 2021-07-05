@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625492038">
-  <project timestamp="1625492038">
+<coverage generated="1625513761">
+  <project timestamp="1625513761">
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Console/Kernel.php">
       <class name="App\Console\Kernel" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="6" coveredelements="4"/>
@@ -15,13 +15,11 @@
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Exceptions/Handler.php">
       <class name="App\Exceptions\Handler" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
       </class>
-      <line num="35" type="method" name="register" visibility="public" complexity="1" crap="1" count="7"/>
-      <line num="37" type="stmt" count="7"/>
-      <line num="39" type="stmt" count="7"/>
-      <line num="40" type="stmt" count="7"/>
-      <metrics loc="41" ncloc="26" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
+      <line num="35" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <metrics loc="41" ncloc="26" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Http/Controllers/Controller.php">
       <class name="App\Http\Controllers\Controller" namespace="global">
@@ -41,14 +39,15 @@
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Http/Controllers/ScoreController.php">
       <class name="App\Http\Controllers\ScoreController" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
       </class>
       <line num="10" type="method" name="show" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="12" type="stmt" count="0"/>
       <line num="13" type="stmt" count="0"/>
       <line num="14" type="stmt" count="0"/>
       <line num="15" type="stmt" count="0"/>
-      <metrics loc="17" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="5" coveredelements="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <metrics loc="19" ncloc="19" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Http/Controllers/SessionController.php">
       <class name="App\Http\Controllers\SessionController" namespace="global">
@@ -231,7 +230,7 @@
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Models/Yatzy.php">
       <class name="App\Models\Yatzy" namespace="global">
-        <metrics complexity="18" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="65" coveredstatements="42" elements="71" coveredelements="46"/>
+        <metrics complexity="17" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="65" coveredstatements="41" elements="71" coveredelements="45"/>
       </class>
       <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
       <line num="25" type="stmt" count="7"/>
@@ -253,7 +252,7 @@
       <line num="64" type="stmt" count="2"/>
       <line num="65" type="stmt" count="2"/>
       <line num="66" type="stmt" count="2"/>
-      <line num="69" type="method" name="highScore" visibility="private" complexity="4" crap="20" count="0"/>
+      <line num="69" type="method" name="highScore" visibility="private" complexity="3" crap="12" count="0"/>
       <line num="71" type="stmt" count="0"/>
       <line num="72" type="stmt" count="0"/>
       <line num="73" type="stmt" count="0"/>
@@ -262,16 +261,16 @@
       <line num="76" type="stmt" count="0"/>
       <line num="77" type="stmt" count="0"/>
       <line num="78" type="stmt" count="0"/>
-      <line num="82" type="stmt" count="0"/>
+      <line num="79" type="stmt" count="0"/>
       <line num="83" type="stmt" count="0"/>
-      <line num="86" type="stmt" count="0"/>
-      <line num="89" type="method" name="playGame" visibility="public" complexity="7" crap="10.47" count="2"/>
-      <line num="92" type="stmt" count="2"/>
+      <line num="84" type="stmt" count="0"/>
+      <line num="87" type="stmt" count="0"/>
+      <line num="90" type="method" name="playGame" visibility="public" complexity="7" crap="10.86" count="2"/>
       <line num="93" type="stmt" count="2"/>
       <line num="94" type="stmt" count="2"/>
       <line num="95" type="stmt" count="2"/>
       <line num="96" type="stmt" count="2"/>
-      <line num="98" type="stmt" count="2"/>
+      <line num="97" type="stmt" count="2"/>
       <line num="99" type="stmt" count="2"/>
       <line num="100" type="stmt" count="2"/>
       <line num="102" type="stmt" count="2"/>
@@ -304,7 +303,7 @@
       <line num="145" type="stmt" count="1"/>
       <line num="148" type="stmt" count="3"/>
       <line num="149" type="stmt" count="3"/>
-      <metrics loc="151" ncloc="151" classes="1" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="65" coveredstatements="42" elements="71" coveredelements="46"/>
+      <metrics loc="151" ncloc="151" classes="1" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="65" coveredstatements="41" elements="71" coveredelements="45"/>
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Models/YatzyHand.php">
       <class name="App\Models\YatzyHand" namespace="global">
@@ -332,9 +331,9 @@
       <line num="46" type="method" name="saveDice" visibility="public" complexity="1" crap="1" count="2"/>
       <line num="48" type="stmt" count="2"/>
       <line num="49" type="stmt" count="2"/>
-      <line num="51" type="method" name="resetSave" visibility="public" complexity="1" crap="1" count="3"/>
-      <line num="53" type="stmt" count="3"/>
-      <line num="54" type="stmt" count="3"/>
+      <line num="51" type="method" name="resetSave" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="1"/>
       <line num="56" type="method" name="returnSaveArr" visibility="public" complexity="1" crap="1" count="2"/>
       <line num="58" type="stmt" count="2"/>
       <metrics loc="60" ncloc="60" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="27" coveredelements="27"/>
@@ -408,6 +407,6 @@
       <line num="21" type="stmt" count="1"/>
       <metrics loc="22" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
     </file>
-    <metrics files="31" loc="1034" ncloc="852" classes="21" methods="44" coveredmethods="35" conditionals="0" coveredconditionals="0" statements="177" coveredstatements="137" elements="221" coveredelements="172"/>
+    <metrics files="31" loc="1036" ncloc="854" classes="21" methods="44" coveredmethods="34" conditionals="0" coveredconditionals="0" statements="176" coveredstatements="133" elements="220" coveredelements="167"/>
   </project>
 </coverage>

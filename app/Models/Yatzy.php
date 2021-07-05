@@ -70,7 +70,8 @@ class Yatzy
     {
         $data = [];
         $score = new Score();
-        $tenth = $score->all()->offsetExists(9) ? $score->all()->sortByDesc('score')->last()->score : 0;
+        $scoreSort = $score->all()->sortByDesc('score')->values();
+        $tenth = $scoreSort[9]->score ?? 0;
         if ($this->scoreboard["summa"] > $tenth) {
             $data['flash'] = "Grattis, din poäng placerar dig bland de tio bästa!";
             $score->create([
@@ -96,7 +97,6 @@ class Yatzy
             "round" => $this->round,
            ];
         $data = array_merge($data, $this->setName());
-        $this->playerhand->resetSave();
         $this->disable = null;
 
         if (isset($_POST["dice"])) {

@@ -1,6 +1,8 @@
 @include('header')
 
 <div class="center">
+    
+    </table>
     <table class="scoretable">
         <tr>
             <th>Placering</th>
@@ -8,16 +10,14 @@
             <th>Namn</th>
             <th>Tidpunkt</th>
         </tr>
-    @php $counter = 1 @endphp
-    @foreach ($score as $row)
+    @for ($i = 0; $i < count($score); $i++)
         <tr>
-        <td>{{ $counter }}</td>
-        @php $counter += 1 @endphp
-        <td>{{ $row->score }}</td>
-        <td>{{ $row->name ?? 'Okänd' }}</td>
-        <td>{{ $row->created_at }}</td>
+        <td>{{ $i + 1 }}</td>
+        <td>{{ $score[$i]->score }}</td>
+        <td>{{ $score[$i]->name ?? 'Okänd' }}</td>
+        <td>{{ $score[$i]->created_at }}</td>
         </tr>
-    @endforeach
+    @endfor
     </table>
 </div>
 
