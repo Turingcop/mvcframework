@@ -9,7 +9,9 @@ class ScoreController extends Controller
 {
     public function show()
     {
-        $data["score"] = Score::all()->sortByDesc('score')->slice(0, 10);
+        $data = [];
+        $score = new Score();
+        $data["score"] = $score->all()->sortByDesc('score')->slice(0, 10);
         return view('score', $data);
     }
 }

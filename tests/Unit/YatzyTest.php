@@ -28,19 +28,19 @@ class YatzyTest extends TestCase
         $this->assertIsArray($res);
     }
 
-    public function testPlayThrough()
-    {
-        $yatzy = new Yatzy("App\Models\YatzyHand", "App\Models\DiceGraphic", 5);
-        $yatzy->presentGame();
-        for ($i = 0; $i <= 6; $i++) {
-            for ($j = 0; $j <= 3; $j++) {
-                $_POST["dice"] = [$i - 1];
-                $yatzy->playGame();
-            }
-        }
-        $res = $yatzy->calcScore();
-        $this->assertIsInt($res["score"]);
-    }
+    // public function testPlayThrough()
+    // {
+    //     $yatzy = new Yatzy("App\Models\YatzyHand", "App\Models\DiceGraphic", 5);
+    //     $yatzy->presentGame();
+    //     for ($i = 0; $i <= 6; $i++) {
+    //         for ($j = 0; $j <= 3; $j++) {
+    //             $_POST["dice"] = [$i - 1];
+    //             $yatzy->playGame();
+    //         }
+    //     }
+    //     $res = $yatzy->calcScore();
+    //     $this->assertIsInt($res["score"]);
+    // }
 
     public function testBonus()
     {

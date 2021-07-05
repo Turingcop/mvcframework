@@ -5,7 +5,6 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Traits\YatzyCheat;
-use App\Models\Score;
 
 class Yatzy
 {
@@ -38,7 +37,6 @@ class Yatzy
 
     public function presentGame()
     {
-        $score = new Score;
         $this->presentationHand = new YatzyHand("App\Models\DiceCheat", 5);
         $data = [
             "header" => "Yatzy",
@@ -61,30 +59,31 @@ class Yatzy
 
     private function setName()
     {
+        $data = [];
         $data['playername'] = $_POST['playername'] ?? $this->playername;
         $this->playername = $_POST['playername'] ?? $this->playername;
         $data["disabled"] = 'disabled';
         return $data;
     }
 
-    private function resetName()
-    {
-        $data["disabled"] = '';
-        $data["playername"] = '';
-        return $data;
-    }
-
     private function highScore()
     {
-        $tenth = Score::all()->offsetExists(9) ? $score->all()->sortByDesc('score')->last()->score : 0;
+        $data = [];
+        $score = new Score();
+        $tenth = $score->all()->offsetExists(9) ? $score->all()->sortByDesc('score')->last()->score : 0;
         if ($this->scoreboard["summa"] > $tenth) {
             $data['flash'] = "Grattis, din poäng placerar dig bland de tio bästa!";
-            Score::create([
+            $score->create([
                 'score' => $this->scoreboard["summa"],
                 'name' => $this->playername,
             ]);
-            return $data;
         }
+
+        if ($score->all()->offsetExists(10)) {
+            $score->all()->sortByDesc('score')->last()->delete();
+        }
+
+        return $data;
     }
 
     public function playGame()
