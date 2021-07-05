@@ -3,6 +3,7 @@
 use App\Models\Books;
 @endphp
 <div class="center">
+<div></div>
     <table class="books">
         <tr>
             <th>
