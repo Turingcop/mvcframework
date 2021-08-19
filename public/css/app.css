@@ -165,11 +165,6 @@ table {
   padding-bottom: 1.4rem;
 }
 
-.books tr td:first-of-type::first-letter {
-  color: #0277BD;
-  font-weight: 900;
-}
-
 input[type=text] {
   height: 2.8rem;
   margin-bottom: 2.8rem;

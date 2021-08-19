@@ -8,6 +8,17 @@ use PHPUnit\Framework\TestCase;
 
 class YatzyTest extends TestCase
 {
+
+    public function setUp(): void
+    {
+        parent::setUp();
+    }
+
+    public function tearDown(): void
+    {
+        parent::tearDown();
+    }
+
     public function testCreateYatzy()
     {
         $yatzy = new Yatzy("App\Models\YatzyHand", "App\Models\DiceGraphic", 5);

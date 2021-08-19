@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625513761">
-  <project timestamp="1625513761">
+<coverage generated="1629332465">
+  <project timestamp="1629332465">
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Console/Kernel.php">
       <class name="App\Console\Kernel" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="6" coveredelements="4"/>
@@ -46,8 +46,8 @@
       <line num="13" type="stmt" count="0"/>
       <line num="14" type="stmt" count="0"/>
       <line num="15" type="stmt" count="0"/>
-      <line num="17" type="stmt" count="0"/>
-      <metrics loc="19" ncloc="19" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <metrics loc="18" ncloc="18" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/orm/app/Http/Controllers/SessionController.php">
       <class name="App\Http\Controllers\SessionController" namespace="global">
@@ -407,6 +407,6 @@
       <line num="21" type="stmt" count="1"/>
       <metrics loc="22" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
     </file>
-    <metrics files="31" loc="1036" ncloc="854" classes="21" methods="44" coveredmethods="34" conditionals="0" coveredconditionals="0" statements="176" coveredstatements="133" elements="220" coveredelements="167"/>
+    <metrics files="31" loc="1035" ncloc="853" classes="21" methods="44" coveredmethods="34" conditionals="0" coveredconditionals="0" statements="176" coveredstatements="133" elements="220" coveredelements="167"/>
   </project>
 </coverage>

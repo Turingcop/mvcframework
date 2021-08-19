@@ -13,7 +13,6 @@ class ScoreController extends Controller
         $data['score'] = [];
         $score = new Score();
         $data["score"] = $score->all()->sortByDesc('score')->values();
-
         return view('score', $data);
     }
 }
