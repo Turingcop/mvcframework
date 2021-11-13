@@ -13,6 +13,7 @@
     <exclude-pattern>cache</exclude-pattern>
     <exclude-pattern>vendor</exclude-pattern>
     <exclude-pattern>migrations</exclude-pattern>
+    <exclude-pattern>resources</exclude-pattern>
     <exclude-pattern>UserFactory.php</exclude-pattern>
     <exclude-pattern>Providers</exclude-pattern>
     <exclude-pattern>Kernel.php</exclude-pattern>
