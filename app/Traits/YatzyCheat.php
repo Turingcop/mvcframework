@@ -6,6 +6,7 @@ namespace App\Traits;
 
 trait YatzyCheat
 {
+    private array $scoreboard;
     public function cheatScore()
     {
         $this->scoreboard = [

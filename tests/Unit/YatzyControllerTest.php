@@ -26,7 +26,7 @@ class YatzyControllerTest extends TestCase
 
     public function testReset()
     {
-        $controller = $controller = new YatzyController();
+        $controller = new YatzyController();
         $controller->start();
         $this->assertInstanceOf("App\Models\Yatzy", session("game"));
 

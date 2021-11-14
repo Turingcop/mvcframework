@@ -18,7 +18,7 @@ class YatzyController extends Controller
 
     public function play()
     {
-        $data = session('game')->playGame();
+        $data = session('game')->/** @scrutinizer ignore-call */ playGame();
         $data['action'] = url($data['action']);
         return view('yatzy', $data);
     }
