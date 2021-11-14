@@ -1,6 +1,6 @@
 BIN        := .bin
 VENDORBIN  := vendor/bin
-PHPLOC     := $(BIN)/phploc
+PHPLOC     := $(BIN)/phploc.phar
 PHPCS      := $(BIN)/phpcs
 PHPCBF     := $(BIN)/phpcbf
 PHPCPD     := $(BIN)/phpcpd
@@ -24,19 +24,19 @@ install-php-tools:
 	install -d .bin
 
 	# phploc
-	sudo curl -Lso $(PHPLOC) https://phar.phpunit.de/phploc.phar && chmod 755 $(PHPLOC)
+	curl -Lso $(PHPLOC) https://phar.phpunit.de/phploc.phar && chmod 755 $(PHPLOC)
 
 	# phpcs
-	sudo curl -Lso $(PHPCS) https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar && chmod 755 $(PHPCS)
+	curl -Lso $(PHPCS) https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar && chmod 755 $(PHPCS)
 
 	# phpcbf
-	sudo curl -Lso $(PHPCBF) https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar && chmod 755 $(PHPCBF)
+	curl -Lso $(PHPCBF) https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar && chmod 755 $(PHPCBF)
 
 	# phpcpd
-	# sudo curl -Lso $(PHPCPD) https://phar.phpunit.de/phpcpd.phar && chmod 755 $(PHPCPD)
+	# curl -Lso $(PHPCPD) https://phar.phpunit.de/phpcpd.phar && chmod 755 $(PHPCPD)
 
 	# phpmd
-	sudo curl -Lso $(PHPMD) https://github.com/phpmd/phpmd/releases/download/2.9.1/phpmd.phar && chmod 755 $(PHPMD)
+	curl -Lso $(PHPMD) https://github.com/phpmd/phpmd/releases/download/2.9.1/phpmd.phar && chmod 755 $(PHPMD)
 
 check-version:
 	uname -a
