@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636858953">
-  <project timestamp="1636858953">
+<coverage generated="1636883331">
+  <project timestamp="1636883331">
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/ci/app/Console/Kernel.php">
       <class name="App\Console\Kernel" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="6" coveredelements="4"/>
@@ -231,7 +231,7 @@
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/ci/app/Models/Yatzy.php">
       <class name="App\Models\Yatzy" namespace="global">
-        <metrics complexity="17" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="65" coveredstatements="41" elements="71" coveredelements="45"/>
+        <metrics complexity="17" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="66" coveredstatements="42" elements="72" coveredelements="46"/>
       </class>
       <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="7"/>
       <line num="25" type="stmt" count="7"/>
@@ -239,7 +239,7 @@
       <line num="36" type="stmt" count="7"/>
       <line num="38" type="method" name="presentGame" visibility="public" complexity="2" crap="2" count="4"/>
       <line num="40" type="stmt" count="4"/>
-      <line num="42" type="stmt" count="4"/>
+      <line num="41" type="stmt" count="4"/>
       <line num="49" type="stmt" count="4"/>
       <line num="50" type="stmt" count="4"/>
       <line num="51" type="stmt" count="4"/>
@@ -266,7 +266,8 @@
       <line num="83" type="stmt" count="0"/>
       <line num="84" type="stmt" count="0"/>
       <line num="87" type="stmt" count="0"/>
-      <line num="90" type="method" name="playGame" visibility="public" complexity="7" crap="10.86" count="2"/>
+      <line num="90" type="method" name="playGame" visibility="public" complexity="7" crap="10.47" count="2"/>
+      <line num="92" type="stmt" count="2"/>
       <line num="93" type="stmt" count="2"/>
       <line num="94" type="stmt" count="2"/>
       <line num="95" type="stmt" count="2"/>
@@ -304,7 +305,7 @@
       <line num="145" type="stmt" count="1"/>
       <line num="148" type="stmt" count="3"/>
       <line num="149" type="stmt" count="3"/>
-      <metrics loc="151" ncloc="151" classes="1" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="65" coveredstatements="41" elements="71" coveredelements="45"/>
+      <metrics loc="151" ncloc="151" classes="1" methods="6" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="66" coveredstatements="42" elements="72" coveredelements="46"/>
     </file>
     <file name="/home/turingcop/dbwebb-kurser/mvc/me/ci/app/Models/YatzyHand.php">
       <class name="App\Models\YatzyHand" namespace="global">
@@ -408,6 +409,6 @@
       <line num="22" type="stmt" count="1"/>
       <metrics loc="23" ncloc="23" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
     </file>
-    <metrics files="31" loc="1036" ncloc="853" classes="21" methods="44" coveredmethods="34" conditionals="0" coveredconditionals="0" statements="177" coveredstatements="133" elements="221" coveredelements="167"/>
+    <metrics files="31" loc="1036" ncloc="853" classes="21" methods="44" coveredmethods="34" conditionals="0" coveredconditionals="0" statements="178" coveredstatements="134" elements="222" coveredelements="168"/>
   </project>
 </coverage>
