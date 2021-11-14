@@ -33,7 +33,7 @@ install-php-tools:
 	curl -Lso $(PHPCBF) https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar && chmod 755 $(PHPCBF)
 
 	# phpcpd
-	curl -Lso $(PHPCPD) https://phar.phpunit.de/phpcpd.phar && chmod 755 $(PHPCPD)
+	curl -Lso $(PHPCPD) https://phar.phpunit.de/phpcpd.phar
 
 	# phpmd
 	curl -Lso $(PHPMD) https://github.com/phpmd/phpmd/releases/download/2.9.1/phpmd.phar && chmod 755 $(PHPMD)
