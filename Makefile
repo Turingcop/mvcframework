@@ -24,7 +24,7 @@ install-php-tools:
 	install -d .bin
 
 	# phploc
-	wget -O $(PHPLOC) https://phar.phpunit.de/phploc.phar && chmod 755 $(PHPLOC)
+	wget -O --no-check-certificate $(PHPLOC) https://phar.phpunit.de/phploc.phar && chmod 755 $(PHPLOC)
 
 	# phpcs
 	curl -Lso $(PHPCS) https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar && chmod 755 $(PHPCS)
@@ -33,7 +33,7 @@ install-php-tools:
 	curl -Lso $(PHPCBF) https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar && chmod 755 $(PHPCBF)
 
 	# phpcpd
-	wget -O .bin/phpcpd https://phar.phpunit.de/phpcpd.phar && chmod 755 .bin/phpcpd
+	wget -O --no-check-certificate .bin/phpcpd https://phar.phpunit.de/phpcpd.phar && chmod 755 .bin/phpcpd
 
 	# phpmd
 	curl -Lso $(PHPMD) https://github.com/phpmd/phpmd/releases/download/2.9.1/phpmd.phar && chmod 755 $(PHPMD)
