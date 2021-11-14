@@ -9,7 +9,7 @@ class Dice
 {
     use HasFactory;
 
-    protected ?int $roll = null;
+    protected int $roll = 0;
     private int $faces;
 
     public function __construct(int $faces = 6)
