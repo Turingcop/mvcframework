@@ -21,7 +21,7 @@ install: install-php-tools
 	composer install
 
 install-php-tools:
-	install -d .bin
+	sudo install -d .bin
 
 	# phploc
 	curl -Lso $(PHPLOC) https://phar.phpunit.de/phploc.phar && chmod 755 $(PHPLOC)
