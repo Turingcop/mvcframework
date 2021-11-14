@@ -6,7 +6,6 @@ php:
 
 before_script:
     - make install
-    - curl install
 
 script:
     - make test
