@@ -5,7 +5,6 @@ php:
     #- "8.0"
 
 before_script:
-    #- make install check
     - make install
 
 script:
