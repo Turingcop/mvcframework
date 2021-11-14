@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Http\Request as httpRequest;
+use Illuminate\Http\Request as aliasRequest;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (httpRequest $request) {
+Route::middleware('auth:api')->get('/user', function (aliasRequest $request) {
     return $request->user();
 });

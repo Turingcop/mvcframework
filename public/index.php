@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Contracts\Http\Kernel;
-use Illuminate\Http\Request as httpRequest;
+use Illuminate\Http\Request as aliasRequest;
 
 define('LARAVEL_START', microtime(true));
 
@@ -49,7 +49,7 @@ $app = require_once __DIR__ . '/../bootstrap/app.php';
 $kernel = $app->make(Kernel::class);
 
 $response = tap($kernel->handle(
-    $request = httpRequest::capture()
+    $request = aliasRequest::capture()
 ))->send();
 
 $kernel->terminate($request, $response);
