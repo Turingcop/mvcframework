@@ -1,6 +1,6 @@
 BIN        := .bin
 VENDORBIN  := vendor/bin
-PHPLOC     := $(BIN)/phploc.phar
+PHPLOC     := $(BIN)/phploc
 PHPCS      := $(BIN)/phpcs
 PHPCBF     := $(BIN)/phpcbf
 PHPCPD     := $(BIN)/phpcpd
@@ -33,7 +33,7 @@ install-php-tools:
 	curl -Lso $(PHPCBF) https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar && chmod 755 $(PHPCBF)
 
 	# phpcpd
-	curl -Lso $(PHPCPD) http://phar.phpunit.de/phpcpd.phar
+	curl -Lso .bin/phpcpd https://phar.phpunit.de/phpcpd.phar && chmod 755 .bin/phpcpd
 
 	# phpmd
 	curl -Lso $(PHPMD) https://github.com/phpmd/phpmd/releases/download/2.9.1/phpmd.phar && chmod 755 $(PHPMD)
