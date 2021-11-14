@@ -17,6 +17,7 @@
     <exclude-pattern>UserFactory.php</exclude-pattern>
     <exclude-pattern>Providers</exclude-pattern>
     <exclude-pattern>Symfony</exclude-pattern>
+    <exclude-pattern>.bin</exclude-pattern>
     <exclude-pattern>Kernel.php</exclude-pattern>
     <exclude-pattern>Handler.php</exclude-pattern>
 
