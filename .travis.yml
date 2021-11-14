@@ -5,8 +5,8 @@ php:
     #- "8.0"
 
 before_script:
-    - make install
     - composer update
+    - make install
 
 script:
     - make test
